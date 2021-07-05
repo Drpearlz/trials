@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border-style: none;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2em;
+  margin: 0.67em 0;
+  margin-top: 40px;
+
+
+}
+
+/* Style the top navigation bar */
+a{
+    color: #e4eaf1
+}
+a.logo {
+  cursor: pointer;
+  color: lightgoldenrodyellow;
+  margin-top: -15px;
+  height: auto;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(48, 46, 160);
+  padding: 10px 0;
+
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav .login {
+  float: right;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  opacity: 0.5;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background: #f9c36e;
+  border: 1px solid #f9c36e;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.btn:hover {
+  border: 1px solid #efb052;
+  border-radius: 3px;
+  background: #efb052;
+  transition: 0.5s;
+}
+
+.fleft a {
+  text-decoration: none;
+  color: #1d4c8b !important;
+}
+
+.login.s {
+  background: #efb054;
+  border-radius: 3px;
+}
+
+.login.s:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(116, 113, 113, 0.19);
+  color: grey;
+}
+
+div.main {
+  background-color: #bc6bc0;
+  color: rgb(90, 57, 57);
+}
+
+main {
+  display: block;
+}
+
+
+/* Left and right column */
+.column.side {
+  width: 75%;
+  float: left;
+  padding: 40px;
+  background-color: #324b87;
+}
+
+.column.side .fleft {
+  display: inline-block;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lead {
+  margin-top: 40px;
+}
+
+.sub {
+  margin-bottom: 40px;
+}
+
+div.fleft {
+  text-transform: uppercase;
+}
+
+.column.middle .lead-img {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  transform: scaleX(-1);
+  float: right;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+  .column.side,
+  .column.middle {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Styling for gallery section - layout*/
+/* div.dog-gallery {
+  /*container */
+/*
+  background: #324b87;
+  text-align: center;
+  display: flex;
+  height: 600px;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: dodgerblue;
+} 
+
+.dog.gallery>div {
+  background-color: #f1f1f1;
+  width: 335px;
+  margin: 10px;
+  text-align: center;
+  line-height: 175px;
+  font-size: 30px;
+}
+
+
+@media (max-width: 800px) {
+  .dog.gallery {
+    flex-direction: column;
+    flex: 100%;
+  }
+}
+
+.gallery>div {
+  color: #fff;
+}
+
+
+div.gallery {
+  margin: 5px;
+ display: inline-block;
+  max-width: 25%;
+  background-color: dodgerblue;
+  padding: 20px;
+  flex: 25%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+.dog-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+  .dog.gallery{
+      flex-direction: column;
+  }
+} */
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid rgba(119, 119, 119, 0.041);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.dog-gallery {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .dog-gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dog-gallery:after {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .dog.gallery {
+    flex: 50%;
+  }
+}
+
+div.footer {
+  background-color: #283593;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  position: initial;
+
+}
+
+#label {
+  width: 172px;
+  height: 21px;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgb(172, 166, 223);
+  margin-top: 0;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .form {
+    margin-top: 2rem;
+  }
+}
+
+.footer .form-input {
+  display: block;
+  text-align: left;
+  grid-template-columns: 1fr;
+}
+
+
+
+@media (min-width: 400px) {
+  .form-input {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.email-input {
+  box-sizing: border-box;
+  width: 35%;
+  height: 55px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.email-input[type=text]:focus {
+  background-color: lightblue;
+}
+
+.form-submit {
+  background-color: #e79e15;
+  color: indigo;
+  border: 2px solid #e79e15;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 54.8px;
+  float: inline-end;
+  padding: 10px 19px;
+  cursor: none;
+  margin-left: -7px;
+  margin-top: .5rem;
+  position: flex;
+}
+
+.form-submit:hover {
+  background-color: #e79e15;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 3px solid #e79e15;
+}
+
+.otherh {
+  text-align: right;
+  float: right;
+  color:#e4eaf1;
+  
+}
+.otherh ul{
+    list-style-type:none;
+}
+
+.otherh li a {
+  padding: 0 10px;
+  color: white;
+  align-items: baseline;
+}
+
+.otherh li a:hover {
+  opacity: 0.5s;
+}
+
+
+
+@media (min-width: 400px) {
+  .form-submit {
+    margin-top: 0;
+  }
+}
